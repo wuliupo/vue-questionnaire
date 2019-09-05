@@ -33,9 +33,10 @@ npm run build
 
 ```
 
-## 后台配置
+## 数据库配置
 
-数据库文件： `api/database.sql`，使用前请先导入。CI框架数据库连接配置信息请先设置。
+- 数据库配置文件：`api/application/config/database.php`
+- 数据库初始化文件： `api/database.sql`
 
 ## 打赏给原作者
 
