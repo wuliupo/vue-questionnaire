@@ -32,8 +32,8 @@ module.exports = {
       '/api': {
         target: 'http://localhost:8888/vue-questionnaire/',
         changeOrigin: true,
-        pathRewrite: {
-          '^/api': '/api'
+        pathRewrite: function (path, req) {
+          return path.replace(/^\/api\/(\w+)(\/(\w))?/, '/api/index.php?c=$1&m=$3')
         }
       }
     },
